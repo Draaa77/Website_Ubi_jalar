@@ -12,7 +12,7 @@ st.write("By Indra Herdiana TI-4B")
 @st.cache_resource
 def load_model():
     # UBAH BAGIAN INI: Panggil Interpreter secara langsung, bukan melalui tf.lite
-    interpreter = tf.lite.Interpreter(model_path="model.tflite")
+    interpreter = tf.lite.Interpreter(model_path="model_VGG16.tflite")
     interpreter.allocate_tensors()
     return interpreter
 
